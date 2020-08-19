@@ -6,14 +6,7 @@
 <title>レベルアップまでどれくらい？ - 放置少女</title>
 </head>
 <body>
-<p>
-<?php
-	$dow = array("日", "月", "火", "水", "木", "金", "土");
-	$today = $dow[date("w")];
-?>
-今日は<span id="day-of-week"><?php echo $today; ?></span>曜日
-(経験値<span id="disp-rate">1</span>倍)
-</p>
+<p>今日は経験値<span id="disp-rate">1</span>倍</p>
 
 [戦役画面の表示]<br>
 LvUPまで：
