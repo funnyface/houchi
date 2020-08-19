@@ -7,7 +7,11 @@
 </head>
 <body>
 <p>
-今日は<span id="day-of-week"><?php echo ["日", "月", "火", "水", "木", "金", "土"][date("w")]; ?></span>曜日
+<?php
+	$dow = array("日", "月", "火", "水", "木", "金", "土");
+	$today = $dow[date("w")];
+?>
+今日は<span id="day-of-week"><?php echo $today; ?></span>曜日
 (経験値<span id="disp-rate">1</span>倍)
 </p>
 
